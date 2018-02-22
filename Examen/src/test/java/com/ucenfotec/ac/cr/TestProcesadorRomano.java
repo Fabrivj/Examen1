@@ -107,4 +107,9 @@ public class TestProcesadorRomano {
         ProcesadorRomano.convierte("DDD");
     }
 
+    @Test
+    public void retornaElValorEsperadoSiLasLetrasSonEnValorDescendente() {
+        assertEquals(ProcesadorRomano.convierte("LXX"), 70);
+    }
+
 }
