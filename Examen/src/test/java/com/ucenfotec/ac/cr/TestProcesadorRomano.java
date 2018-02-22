@@ -112,4 +112,14 @@ public class TestProcesadorRomano {
         assertEquals(ProcesadorRomano.convierte("LXX"), 70);
     }
 
+    @Test
+    public void retornaLosValoresEsperados() {
+        assertEquals(ProcesadorRomano.convierte("LX"), 60);
+        assertEquals(ProcesadorRomano.convierte("XVI"), 16);
+        assertEquals(ProcesadorRomano.convierte("VIII"), 8);
+        assertEquals(ProcesadorRomano.convierte("XXI"), 21);
+        assertEquals(ProcesadorRomano.convierte("CI"), 101);
+        assertEquals(ProcesadorRomano.convierte("CLXI"), 161);
+    }
+
 }
